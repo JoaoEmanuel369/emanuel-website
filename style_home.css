@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans" !important;
+    
+}
+
+:root{
+    --bg-color1: #fffffe;
+    --bg-color2: #d1d1e9;
+    --bg-color-3: #CBDCEB;
+    --bg-color4: #6D94C5;
+
+    --highlight-1: #6246ea;
+    --highlight-2: #e45858;
+    --highlight-3: #eebbc3;
+
+    --text-color1: #2b2c34;
+
+    --selection-bg-color: #cbeef3;
+    --selection-text-color: #f49cbb;
+
+    
+}
+
+@font-face {
+  font-family: "Quika";
+  src: url("assets/fonts/Quika.otf") format('opentype');
+  
+}
+
+::selection{ /*cores de seleção*/
+    background-color: var(--selection-bg-color);
+    color: var(--selection-text-color);
+}
+/*------------------------*/
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); } 
+  100% { transform: translateY(0px); }  
+}
+
+.header1{
+    display: flex;
+    align-items: last baseline;
+    justify-content: end;
+    height: 100px;
+    padding: 0;
+}
+
+.header1 img{
+    width: 100px;
+}
+body{
+    background-image: url(assets/img/gridpattern_bg.jpeg);
+}
+
+.container{
+    max-width: 1020px;
+}
+
+/*Nav-----*/
+nav{
+    height: 90px;
+    background-color: var(--bg-color2);
+    color: var(--text-color1) !important;
+}
+
+.navbar-brand{
+    font-family: "Quika", sans-serif !important;
+    font-size: 30px;
+    color: var(--highlight-1);
+    text-transform: capitalize;
+    transition: ease-in-out all 350ms;
+    transform: scale(1);
+}
+
+.navbar-brand:hover{
+    color: var(--highlight-1);
+    transition: ease-in-out all 350ms;
+    transform: scale(0.9);
+}
+
+.active{
+    color: var(--highlight-1) !important;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--highlight-2);
+}
+
+/*Main-----*/
+
+.main1{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.descricao{
+    background-color: var(--bg-color1);
+    padding: 5px;
+}
+
+.main1 h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: var(--highlight-1);
+}
+
+.main1 p{
+    font-size: 18px;
+    text-align: left;
+    color: var(--text-color1);
+}
+
+
+.main1 h2{
+    font-weight: 650;
+    color: var(--text-color1);
+}
+
+.main1 .section1{
+    margin-top: 30px;
+}
+
+main a{
+    color: var(--highlight-2);
+    font-weight: 650;
+    transition: 350ms ease-in-out all;
+}
+
+main a:hover{
+    color: var(--highlight-1);
+    font-weight: 650;
+    transition: 350ms ease-in-out all;
+}
+
+.aside1{
+    align-self: center;
+}
+
+.aside1 img{
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.main1 article{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main1 svg:hover{
+    fill: var(--highlight-1);
+    transition: 350ms ease-in-out all;
+    transform: scale(1.1);
+}
+
+.main1 svg{
+    transition: 350ms ease-in-out all;
+}
+
+/*--------main2*/
+
+/*-----------*/
+
+.aside2{
+    background-color: var(--bg-color1);
+    border-right: 2px dashed var(--bg-color4);
+    border-left: 2px dashed var(--bg-color4);
+}
+
+.aside2 header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color1);
+    border-top: 2px dashed var(--bg-color4);
+    border-bottom: 2px dashed var(--bg-color4);
+}
+
+.aside2 header h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.aside2 p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.aside2 article{
+    padding: 10px;
+}
+
+.aside2 img{
+    border-radius: 10px;
+    transition: 350ms ease-in-out all;
+    scale:(1);
+}
+
+.aside2 div:hover{
+     transition: 350ms ease-in-out all;
+    transform: scale(1.1);
+}
+
+.aside2 div{
+    transition: 350ms ease-in-out all;
+}
+
+.aside2 a{
+    text-decoration: none;
+}
+
+.main2{
+    background-color: var(--bg-color1);
+    border-top: var(--text-color1) dashed;
+}
+
+.main2 h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: var(--highlight-1);
+    text-align: center;
+}
+
+.main2 h2{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.main2 p{
+    font-size: 18px;
+    text-align: left;
+    color: var(--text-color1);
+}
+
+.main2 article{
+    height: 90px;
+}
+
+/*---------footer*/
+footer{
+    background-color: var(--bg-color4);
+    text-align: center;
+    font-size: 18px;
+    color: var(--bg-color1);
+    padding: 5px;
+    font-weight: 500;
+}
+
+footer p{
+    margin-top: 20px;
+}
+/*--------------*/
+
+/*modal-contato*/
+#email{
+    color: var(--highlight-1);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.modal-contato{
+    align-self: center;
+}
+
+
+.modal-contato h1{
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--bg-color1);
+}
+
+.modal-contato p{
+    text-align: center;
+    font-weight: 200;
+}
+
+.modal-contato img{
+    border-radius: 30px;
+    width: 200px;
+    align-self: center;
+    animation: float 5s alternate infinite;
+}
+
+ .modal-contato .modal-header{
+    background-color: var(--bg-color4);
+}
+
+.modal-contato .modal-body{
+    background-color: var(--bg-color-3);
+}
+
+.modal-contato button{
+    background-color: var(--highlight-1);
+    border: none;
+    transition: 350ms all ease-in-out;
+}
+
+.modal-contato button:hover{
+    background-color: var(--bg-color4);
+    transition: 350ms all ease-in-out;
+}
+
+
+/*----------------*/
