@@ -2,7 +2,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Open Sans" !important;
+    font-family: "Open Sans";
+    scrollbar-color: var(--bg-color4) var(--bg-color-3);
     
 }
 
@@ -69,7 +70,7 @@ nav{
 }
 
 .navbar-brand{
-    font-family: "Quika", sans-serif !important;
+    font-family: "Quika", sans-serif;
     font-size: 30px;
     color: var(--highlight-1);
     text-transform: capitalize;
@@ -116,6 +117,7 @@ nav{
     text-transform: uppercase;
     font-size: 50px;
     color: var(--highlight-1);
+    font-family: "Grandstander", cursive;
 }
 
 .main1 p{
@@ -128,6 +130,7 @@ nav{
 .main1 h2{
     font-weight: 650;
     color: var(--text-color1);
+    font-family: "Grandstander", cursive;
 }
 
 .main1 .section1{
@@ -178,6 +181,7 @@ main a:hover{
     background-color: var(--bg-color1);
     border-right: 2px dashed var(--bg-color4);
     border-left: 2px dashed var(--bg-color4);
+    padding: 10px;
 }
 
 .aside2 header{
@@ -185,7 +189,6 @@ main a:hover{
     justify-content: center;
     text-align: center;
     background-color: var(--bg-color1);
-    border-top: 2px dashed var(--bg-color4);
     border-bottom: 2px dashed var(--bg-color4);
 }
 
@@ -193,6 +196,7 @@ main a:hover{
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+    font-family: "Grandstander", cursive;
 }
 
 .aside2 p{
@@ -203,28 +207,42 @@ main a:hover{
 }
 
 .aside2 article{
-    padding: 10px;
+    border: 1px var(--text-color1) solid;
+    background-color: var(--bg-color-3);
 }
 
-.aside2 img{
-    border-radius: 10px;
-    transition: 350ms ease-in-out all;
-    scale:(1);
+.aside2 section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.aside2 div:hover{
-     transition: 350ms ease-in-out all;
-    transform: scale(1.1);
+.aside2 .scroll_aside_1{
+    overflow: auto;
+    overflow: scroll;
+    overflow-x: auto;
+    min-height: 200px;
+    max-height: 600px;
 }
 
-.aside2 div{
-    transition: 350ms ease-in-out all;
+.aside2 p{
+    text-align: start;
+    font-family: "Roboto Mono", monospace;
 }
 
 .aside2 a{
     text-decoration: none;
 }
 
+.aside2 .header_scroll{
+    border-bottom: 1px solid var(--text-color1);
+    border-top: none;
+    font-family: "Roboto Mono", monospace;
+    background-color: var(--bg-color4);
+    color: var(--bg-color1);
+}
+
+/*main2----*/
 .main2{
     background-color: var(--bg-color1);
     border-top: var(--text-color1) dashed;
@@ -236,11 +254,13 @@ main a:hover{
     font-size: 36px;
     color: var(--highlight-1);
     text-align: center;
+    font-family: "Grandstander", cursive;
 }
 
 .main2 h2{
     font-size: 19px;
     font-weight: 600;
+    font-family: "Grandstander", cursive;
 }
 
 .main2 p{
@@ -320,3 +340,64 @@ footer p{
 
 
 /*----------------*/
+
+@keyframes balancando {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.img-balancando{
+    animation: balancando 10s ease-in-out infinite;
+    pointer-events: none;
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes respirando {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.05); /* Expansão de 5% apenas na vertical */
+  }
+}
+
+.img-respirando{
+    animation: respirando 5s ease-in-out infinite;
+}
+
+/*--------*/
+.balao{
+   clip-path: polygon(
+    0% 0%,      /* Canto superior esquerdo */
+    100% 0%,    /* Canto superior direito */
+    100% 75%,   /* Canto inferior direito */
+    50% 75%,    /* Início da cauda (agora vindo da direita para esquerda) */
+    25% 100%,   /* O bico da cauda (posicionado na esquerda) */
+    25% 75%,    /* Fim da cauda */
+    0% 75%      /* Canto inferior esquerdo */
+  );
+  
+  height: 250px;
+
+  background-color: var(--selection-bg-color);
+  padding: 20px;
+}
+
+.balao p{
+    text-align: left; font-size: 16px;
+}
+
+body li::marker{
+    content: url(assets/img/svg/star-fill.svg);
+}

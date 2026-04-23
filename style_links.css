@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Open Sans" !important;
+    scrollbar-color: var(--bg-color4) var(--bg-color-3);
 }
 
 :root{

@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    scrollbar-color: var(--bg-color4) var(--bg-color-3);
+}
+
+
+:root{
+    --bg-color1: #fffffe;
+    --bg-color2: #d1d1e9;
+    --bg-color-3: #b8c1ec;
+    --bg-color4: #6D94C5;
+
+    --highlight-1: #6246ea;
+    --highlight-2: #e45858;
+    --highlight-3: #eebbc3;
+
+    --text-color1: #2b2c34;
+
+     --selection-bg-color: #cbeef3;
+    --selection-text-color: #f49cbb;
+
+    
+}
+
+::selection{ /*cores de seleção*/
+    background-color: var(--selection-bg-color);
+    color: var(--selection-text-color);
+}
+
+@font-face {
+  font-family: "Quika";
+  src: url("/assets/fonts/Quika.otf") format('opentype');
+  
+}
+
+body{
+    background-image: url(/assets/img/gridpattern_bg.jpeg);
+}
+
+main a{
+    color: var(--highlight-2);
+    font-weight: 650;
+    transition: 350ms ease-in-out all;
+}
+
+main a:hover{
+    color: var(--highlight-1);
+    font-weight: 650;
+    transition: 350ms ease-in-out all;
+}
+
+.container{
+    max-width: 1020px;
+}
+
+/*Nav-----*/
+nav{
+    height: 90px;
+    background-color: var(--bg-color2);
+    color: var(--text-color1) !important;
+}
+
+.navbar-brand{
+    font-family: "Quika", sans-serif !important;
+    font-size: 30px;
+    color: var(--highlight-1);
+    text-transform: capitalize;
+    transition: ease-in-out all 350ms;
+    transform: scale(1);
+}
+
+.navbar-brand:hover{
+    color: var(--highlight-1);
+    transition: ease-in-out all 350ms;
+    transform: scale(0.9);
+}
+
+.active{
+    color: var(--highlight-1) !important;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--highlight-2);
+}
+
+/*nav2--*/
+
+.nav2{
+    background-color: var(--bg-color4);
+}
+
+.nav2 a{
+    color: var(--bg-color1);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav2 .active a{
+    color: var(--text-color1);
+}
+
+.nav2 .list-inline-item{
+    margin-left: 3px;
+}
+
+/*main1*---*/
+
+.main1 p{
+    font-size: 18px;
+}
+
+.main1 h2{
+    font-family: "Grandstander", cursive;
+    color: var(--bg-color4);
+}
+
+.main1 h3{
+    font-family: "Grandstander", cursive;
+    color: var(--text-color1);
+}
+
+.main1{ 
+    background-color: var(--bg-color1);
+}
+
+.main1 section{
+    border-top: dashed 3px var(--bg-color-3);
+    padding: 2px;
+}
+
+.main1 img{
+    width: 300px;
+}
+
+.main1 h4{
+    font-family: "Grandstander", cursive;
+    font-size: 20px;
+}
+
+.main1 li::marker{
+    content: url(/assets/img/svg/star-fill.svg);
+}
+
+/*---------footer*/
+footer{
+    background-color: var(--bg-color4);
+    text-align: center;
+    font-size: 18px;
+    color: var(--bg-color1);
+    padding: 5px;
+    font-weight: 500;
+}
+
+footer p{
+    margin-top: 20px;
+}
+/*--------------*/
+
+.balao{
+   clip-path: polygon(
+    0% 0%,      /* Canto superior esquerdo */
+    100% 0%,    /* Canto superior direito */
+    100% 75%,   /* Canto inferior direito */
+    50% 75%,    /* Início da cauda (agora vindo da direita para esquerda) */
+    25% 100%,   /* O bico da cauda (posicionado na esquerda) */
+    25% 75%,    /* Fim da cauda */
+    0% 75%      /* Canto inferior esquerdo */
+  );
+  
+  height: 250px;
+
+  background-color: var(--selection-bg-color);
+  padding: 20px;
+  transform: rotate(2deg);
+}
+
+.balao p{
+    text-align: left; font-size: 16px;
+}

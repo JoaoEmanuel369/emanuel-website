@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <script src="script.js"></script>
 </head>
@@ -22,7 +28,7 @@
   
 
   <header class="header1 container">
-    <img src="assets/img/comingsoon.png" alt="" class="img-fluid"">
+    <img src="assets/img/jevil-3.png" alt="" class="img-fluid position-absolute img-respirando" style="width: 300px; bottom: 600px; z-index: 100;">
   </header>
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary container">
@@ -34,7 +40,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
         <a class="nav-link active me-3"  aria-current="page" href="#">Home</a>
-        <a class="nav-link me-3" href="index_about.html">Sobre</a>
+        <a class="nav-link me-3" href="html_about/index_about.html">Sobre</a>
         <a class="nav-link me-3" href="#">Projetos</a>
         <a class="nav-link me-3" href="#">Jogos</a>
         <a class="nav-link me-3" href="index_links.html">Links</a>
@@ -48,11 +54,11 @@
 
 <div class="col descricao">
     <div class="row row-main1">
-        <section class="col-7 section1">
-        <h1>Bem vindo!</h1>
-        <p>Meu nome é João Emanuel. Hoje com meu continuo estudo e pouco de experiencia, vejo que meu entusiasmo vem do desenvolvimento e <b>criação de projetos; designs, desenvolvimento de jogos e softwares, Front End de sites, edição de vídeos</b> - você escolhe!</p>
-        <p>Estou sempre em busca de aprender novas coisas e sempre ter mente aberta para novas experiencias buscando crescer minha lista de habilidades, se você tem uma oportunidade e precisa da minha ajuda, por favor...</p>
-        <h2>...me contacta!</h2>
+        <section class="col-6 section1">
+        <h1>Bem-vindo!</h1>
+      <p>Meu nome é João Emanuel. Hoje, com meus estudos contínuos e minha experiência, vejo que meu entusiasmo vem do desenvolvimento e da <b>criação de projetos: design, desenvolvimento de jogos e softwares, Front-End, edição de vídeos</b> — o que você imaginar!</p>
+      <p>Estou sempre em busca de aprender coisas novas e mantenho a mente aberta para experiências que ampliem meu leque de habilidades. Se você tem uma oportunidade e precisa da minha ajuda, por favor...</p>
+      <h2>...entre em contato!</h2>
 
         <p id="email" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" onclick="playSound()" style="width: fit-content;">E mail</p>
         <audio id="myAudio" src="assets/audio/click.mp3"></audio>
@@ -112,37 +118,32 @@
         </article>
     </section>
 
-    <aside class="col-4 aside1">
-        <img src="assets/img/pfp.jpg" alt="" class="img-fluid">
-        <p style="font-weight: 200; font-size: 15px;text-align: right;"><em>Art by: @demodelico</em></p>
+    <aside class="col-4 aside1 mt-auto">
+      <img src="assets/img/Sem título.png" alt="" class="img-fluid position-absolute img-balancando" style="bottom: 250px; width: 230px;">
+        <img src="assets/img/jevil.png" alt="" class="img-fluid">
+       <!--<p style="font-weight: 200; font-size: 15px;text-align: right;"><em>Art by: @demodelico</em></p>--> 
     </aside>
     </div>
     </div>
 
-    <aside class="col-2 aside2">
+    <aside class="col-2 aside2" style="width: 200px;">
       
-      <header>
-        <h3>recentes</h3>
+      <header class="d-flex justify-content-center text-center allign-items-center p-0">
+        <h3>changelogs</h3>
       </header>
 
       <section>
-        <article class="col">
-
-          <div><a href="">
-            <a href="https://acid-man666.itch.io/plushie-adventure-tech-demo" target="_blank">
-          <img src="assets/img/projects_icons/1.png" alt="" class="img-fluid">
-          <p>plushie's adventure</p>
-        </div>
-            </a>
-          <div> <img src="assets/img/projects_icons/2.png" alt="" class="img-fluid">
-          <p>missão anti-dengue</p>
+        <article>
+          <header class="header_scroll">Abril 22, 2026</header>
+          <div class="scroll_aside_1">
+            
+            <ul>
+              <li>Atualização no layout da aba "Sobre"</li>
+              <li>Novos <em>misceleanous</em> adicionados</li>
+              <li>Paleta de cores reformulada</li>
+              <li>Mais Webkits personalizados</li>
+            </ul>
           </div>
-          
-          <div> 
-            <img src="assets/img/projects_icons/3.png" alt="" class="img-fluid">
-            <p>nasu - nes</p>
-          </div>
-          
         </article>
       </section>
 
@@ -152,18 +153,6 @@
       </section>
     </aside>
 </main>
-
-<main class="container main2 col">
-
-    <div class="row">
-        <h1>Recentes</h1>
-    </div>
-
-    <article class="row">
-           <h2>Abril 06, 2026</h2>
-    <p>Seja bem-vindo ao meu prototipo de portifolio, isso e so um teste, se gostou veja meu <a target="_blank" href="https://joaoemanuelrpm.wixsite.com/emanuelportifolio">antigo</a>.</p>
-    </article>
- </main>
 
 <footer class="container">
     <p>Copyright 2026 © João-Emanuel</p>
