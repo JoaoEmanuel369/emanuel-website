@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    scrollbar-color: var(--bg-color4) var(--bg-color-3);
+}
+
+
+:root{
+    --bg-color1: #fffffe;
+    --bg-color2: #d1d1e9;
+    --bg-color-3: #b8c1ec;
+    --bg-color4: #6D94C5;
+
+    --highlight-1: #6246ea;
+    --highlight-2: #e45858;
+    --highlight-3: #eebbc3;
+
+    --text-color1: #2b2c34;
+
+     --selection-bg-color: #cbeef3;
+    --selection-text-color: #f49cbb;
+
+    --balao-caim-color: #f3cbd8;
+
+    
+}
+
+::selection{ /*cores de seleção*/
+    background-color: var(--selection-bg-color);
+    color: var(--selection-text-color);
+}
+
+@font-face {
+  font-family: "Quika";
+  src: url("/assets/fonts/Quika.otf") format('opentype');
+  
+}
+
+
+
+body{
+    background-image: url(/assets/img/gridpattern_bg.jpeg);
+}
+
+/*Nav-----*/
+nav{
+    height: 90px;
+    background-color: var(--bg-color2);
+    color: var(--text-color1) !important;
+}
+
+.navbar-brand{
+    font-family: "Quika", sans-serif !important;
+    font-size: 30px;
+    color: var(--highlight-1);
+    text-transform: capitalize;
+    transition: ease-in-out all 350ms;
+    transform: scale(1);
+}
+
+.navbar-brand:hover{
+    color: var(--highlight-1);
+    transition: ease-in-out all 350ms;
+    transform: scale(0.9);
+}
+
+.active{
+    color: var(--highlight-1) !important;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--highlight-2);
+}
+
+/*Main1----------*/
+
+.menu{
+    background-color: var(--bg-color1);
+    color: var(--bg-color4);
+    font-family: "Grandstander", cursive;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.menu select{
+    background-color: var(--bg-color4);
+    color: var(--selection-bg-color);
+    border: none;
+}
+
+.menu label{
+    font-family: "Grandstander", cursive
+}
+
+.item_jogo{
+    background-color: var(--bg-color1);
+    width: 300px;
+    padding: 5px;
+    border: 1px var(--text-color1) solid;
+    border-radius: 30px;
+}
+
+.item_jogo img{
+    border-radius: 30px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+section{
+    background-color: var(--bg-color1);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.container{
+    max-width: 1020px;
+}
+
+h4{
+    font-family: "Grandstander", cursive;
+}
+
+section ul{
+    color: var(--highlight-2);
+    display: flex;
+    justify-content: center;
+}
+
+section li{
+    font-family: "Grandstander", cursive;
+    font-size: 18px;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--text-color1);
+}
+
+
+h5{
+    font-size: 14px;
+}
+h6{
+    font-size: 12px;
+}

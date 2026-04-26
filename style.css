@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scrollbar-color: var(--bg-color4) var(--bg-color-3);
+    -webkit-user-select: none;
+}
+
+:root{
+    --bg-color1: #fffffe;
+    --bg-color2: #d1d1e9;
+    --bg-color-3: #b8c1ec;
+    --bg-color4: #6D94C5;
+
+    --highlight-1: #6246ea;
+    --highlight-2: #e45858;
+    --highlight-3: #eebbc3;
+
+    --text-color1: #2b2c34;
+
+    --selection-bg-color: #cbeef3;
+    --selection-text-color: #f49cbb;
+
+    
+}
+
+@font-face {
+  font-family: "win";
+  src: url("assets/fonts/win.ttf");
+}
+
+body{
+    background-image: url(assets/img/gridpattern_bg.jpeg);
+    overflow: hidden;
+}
+
+h6{
+    color: white;
+    font-family: "win";
+}
+
+
+
+.total{
+    height: 100vh;
+}
+
+.abaixo{
+    background: linear-gradient(to bottom, transparent, black);
+}
+
+main p{
+    font-family: "win";
+}
+
+header p{
+    font-family: sans-serif;
+    color: white;
+}
+
+header{
+    background: linear-gradient(to right, navy,lightblue);
+    border-right: solid 3px black;
+    border-top: solid 3px #efefef;
+    border-left: solid 3px #efefef;
+}
+
+.container{
+    max-width: 600px;
+}
+
+main section{
+    background-color: #c6c6c6;
+    border-right: solid 3px black;
+    border-bottom: solid 3px black;
+    border-left: solid 3px #efefef;
+    padding: 10px;
+}
+
+.text{
+    background-color: white;
+    padding: 5px;
+}
+
+li{
+    font-family: "win";
+}
+
+li::marker{
+    content: url(assets/win98-textures/check-1.png);
+}
+
+.caine{
+    background-color: rgb(255, 169, 169);
+    border: red 3px solid;
+    padding: 3px;
+    text-align: justify;
+}
+
+.caine li::marker{
+    content: url(assets/markers/caine_marker.png);
+}
+
+button{
+    padding: 2px;
+    font-family: "win";
+    background-color: #c6c6c6;
+    border-right: solid 3px black;
+    border-bottom: solid 3px black;
+    border-left: solid 3px #efefef;
+    width: 100px;
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(40px);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.misc{
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    animation: float 5s infinite alternate, rotate 600s infinite;
+    position: absolute;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="/assets/318b8ea1df5ff32.ico" type="image/x-icon">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Boostrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style_assets.css">
+    <script src="\script.js"></script>
+    <script src="music.js"></script>
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">João emanuel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link me-3" href="/home_html/home.html">Home</a>
+        <a class="nav-link me-3"  aria-current="page" href="#">Sobre</a>
+        <a class="nav-link me-3" href="/html_projetos/projetos.html">Projetos</a>
+        <a class="nav-link me-3 active" href="\index_links.html">Links</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--Misc-->
+
+<div class="position-fixed" style="right: 15px; top: 300px;">
+    <div>
+        <div class="bubble_balaoc">
+            <p>O que você acha de ouvir uma <br><b id="ex1">FODE</b><b id="ex1"><img src="/assets/markers/caine_censor.png" alt="" class="img-fluid" style="width: 60px;">O</b> música!</p>
+        </div>
+    </div>
+    <img src="/assets/characters/bubble.png" alt="" class="img-fluid bubble">
+    <audio id="musica-fundo" loop>
+    <source src="sua-musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+</audio>
+</div>
+
+<div id="player-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <button id="btn-musica">🎵 Play/Pause</button>
+</div>
+
+<div class="position-fixed" style="left: 13px; filter: drop-shadow(2px 4px 0px rgba(0, 0, 0, 0.449));">
+    <img src="/assets/characters/caim.png" alt="" class="img-fluid caim">
+<div>
+    <div class="caim_balaoc">
+        
+        <p><b id="ex1">Bem-vindo!</b> a coleção de assets do site, fique a vontade para usar nossos <b id="ex2">GLOINKS!!</b></p>
+
+    </div>
+</div>
+</div>
+<!--Main-->
+
+<main class="main1 container mt-3">
+
+    <div class="row">
+        <section class="col">
+        <header>
+            <h2>Decor</h2>
+        </header>
+        
+        <article>
+            <img src="/assets/img/E_XT0LRWEAI7KXD.jpg" alt="" class="img-fluid">
+            <img src="/assets/img/henlo.png" alt="" class="img-fluid">
+            <img src="/assets/img/email.png" alt="" class="img-fluid">
+            <img src="/assets/img/pfp.jpg" alt="" class="img-fluid">
+            <img src="/assets/characters/caim.png" alt="" class="img-fluid">
+            <img src="/assets/img/comingsoon.png" alt="" class="img-fluid">
+            <img src="/assets/characters/bubble.png" alt="" class="img-fluid">
+            <img src="/assets/markers/caine_censor.png" alt="" class="img-fluid">
+        </article>
+    </section>
+
+    <section class="col">
+        <header>
+            <h2>GIFS</h2>
+        </header>
+        
+        <article class="img-fluid">
+            <img src="/assets/img/gif/cinnafloat.gif" alt="" class="img-fluid">
+            <img src="/assets/img/gif/jevil_boing.gif" alt="" class="img-fluid">
+            <img src="/assets/img/gif/spamton_dance.gif" alt="" class="img-fluid">
+            <img src="/assets/img/gif/sunflower_line3.gif" alt="" class="img-fluid">
+            <img src="/assets/img/gif/darly-boxman-darly.gif" alt="" class="img-fluid">
+        </article>
+    </section>
+    </div>
+
+</main>
+    
+</body>
+</html>

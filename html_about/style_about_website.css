@@ -150,6 +150,10 @@ nav{
     content: url(/assets/img/svg/star-fill.svg);
 }
 
+.main1 li{
+    padding-left: 3px;
+}
+
 /*---------footer*/
 footer{
     background-color: var(--bg-color4);

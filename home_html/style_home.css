@@ -22,12 +22,19 @@
     --selection-bg-color: #cbeef3;
     --selection-text-color: #f49cbb;
 
+    --balao-caim-color: #f3cbd8;
+
     
 }
 
 @font-face {
+  font-family: "win";
+  src: url("/assets/fonts/win.ttf");
+}
+
+@font-face {
   font-family: "Quika";
-  src: url("assets/fonts/Quika.otf") format('opentype');
+  src: url("/assets/fonts/Quika.otf") format('opentype');
   
 }
 
@@ -55,7 +62,8 @@
     width: 100px;
 }
 body{
-    background-image: url(assets/img/gridpattern_bg.jpeg);
+    background-image: url(/assets/img/gridpattern_bg.jpeg);
+    overflow-x: hidden;
 }
 
 .container{
@@ -222,12 +230,34 @@ main a:hover{
     overflow: scroll;
     overflow-x: auto;
     min-height: 200px;
-    max-height: 600px;
+    max-height: 300px;
 }
+
+.adesivos img{
+    filter: drop-shadow(5px 4px 0px rgba(0, 0, 0, 0.47));
+}
+
+.aside2 .scroll_badges{
+    overflow: auto;
+    overflow: scroll;
+    overflow-x: auto;
+    min-height: 200px;
+    max-height: 294px;
+    width: 150px;
+}
+
+.scroll_badges img{
+    margin-bottom: 10px;
+}
+
 
 .aside2 p{
     text-align: start;
     font-family: "Roboto Mono", monospace;
+}
+
+.aside2 p::before{
+    content: url(assets/img/svg/star-fill.svg);
 }
 
 .aside2 a{
@@ -240,6 +270,11 @@ main a:hover{
     font-family: "Roboto Mono", monospace;
     background-color: var(--bg-color4);
     color: var(--bg-color1);
+}
+
+.aside2 li{
+    font-family: "Roboto Mono", monospace;
+    
 }
 
 /*main2----*/
@@ -274,7 +309,7 @@ main a:hover{
 }
 
 /*---------footer*/
-footer{
+.footer{
     background-color: var(--bg-color4);
     text-align: center;
     font-size: 18px;
@@ -283,7 +318,7 @@ footer{
     font-weight: 500;
 }
 
-footer p{
+.footer p{
     margin-top: 20px;
 }
 /*--------------*/
@@ -302,14 +337,17 @@ footer p{
 
 
 .modal-contato h1{
-    text-transform: capitalize;
+    text-transform: lowercase;
     text-align: center;
     color: var(--bg-color1);
+    font-family: sans-serif;
+    font-weight: 300;
 }
 
 .modal-contato p{
     text-align: center;
     font-weight: 200;
+    font-family: "win";
 }
 
 .modal-contato img{
@@ -320,24 +358,38 @@ footer p{
 }
 
  .modal-contato .modal-header{
-    background-color: var(--bg-color4);
+    background: linear-gradient(to right, navy, lightblue);
+    border-radius: 0px;
+    border-right: solid 3px black;
+    border-top: solid 3px #efefef;
+    border-left: solid 3px #efefef;
 }
 
 .modal-contato .modal-body{
-    background-color: var(--bg-color-3);
+    background-color: #c6c6c6;
+    border-right: solid 3px black;
+    border-bottom: solid 3px black;
+    border-left: solid 3px #efefef;
+    padding: 10px;
+}
+
+.modal_ext{
+    padding: 10px;
 }
 
 .modal-contato button{
-    background-color: var(--highlight-1);
-    border: none;
-    transition: 350ms all ease-in-out;
+    font-family: "win";
+    background-color: #c6c6c6;
+    border-right: solid 3px black;
+    border-bottom: solid 3px black;
+    border-left: solid 3px #efefef;
+    border-radius: 0px;
+    color: black;
 }
 
-.modal-contato button:hover{
-    background-color: var(--bg-color4);
-    transition: 350ms all ease-in-out;
+.modal b{
+    font-family: "win" !important;
 }
-
 
 /*----------------*/
 
@@ -400,4 +452,130 @@ footer p{
 
 body li::marker{
     content: url(assets/img/svg/star-fill.svg);
+}
+
+/*---------OS*/
+
+.os{
+    height: 80vh;
+    background-color: #54a194;
+    border-right: solid 3px black;
+    border-left: solid 3px #efefef;
+    border-top: solid 3px #efefef ;
+}
+
+.os .apps{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.os p{
+    font-family: "win";
+    color: white;
+}
+
+.os .app{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.os .app:hover{
+    background-color: rgba(0, 0, 0, 0.501);
+}
+
+.footer_os{
+    background-color: #c6c6c6;
+    border-top: 3px #efefef solid;
+    display: flex;
+    border-bottom: solid 3px black;
+     border-right: solid 3px black;
+    border-left: solid 3px #efefef;
+    border-top: solid 3px #efefef ;
+    padding: 3px;
+}
+
+.footer_os button{
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-top: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+    border-left: solid 3px #efefef;
+    border-top: solid 3px #efefef ;
+}
+
+.windows{
+    top: 10%;
+    left: 15%;
+    z-index: 100;
+    display: none;
+}
+
+/*-------Notepad*/
+
+.notepad_container{
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+    border-left: solid 3px #efefef;
+    border-top: solid 3px #efefef ;
+    width: fit-content;
+}
+
+.notepad header{
+    background: linear-gradient(to right, navy, lightblue);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.notepad p{
+    margin: 0;
+    margin-left: 3px;
+}
+
+.notepad{
+    background-color: #c6c6c6;
+    width: 400px;
+    padding: 5px;
+}
+
+.notepad button{
+    width: 30px;
+    height: 30px;
+    font-family: sans-serif;
+}
+
+.notepad li{
+    font-family: "win";
+}
+
+.notepad .txt{
+    background-color: white;
+    padding: 2px;
+}
+
+.notepad textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+     font-family: monospace;
+     border: none;
+     outline: none;
+
+}
+
+.win-button:hover{
+    color: white;
+    background-color: var(--highlight-1);
+    transition: 350ms all ease-in-out;
+}
+
+.win-button{
+    color: var(--text-color1);
+    background-color: var(--bg-color2);
+    transition: 350ms all ease-in-out;
 }

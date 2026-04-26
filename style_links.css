@@ -343,3 +343,10 @@ footer p{
     
 }
 /*----------------*/
+
+.code{
+    background-color: var(--bg-color1);
+    border: 2px black solid;
+    max-width: 300px;
+    max-height: 300px;
+}

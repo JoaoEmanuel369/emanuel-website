@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    scrollbar-color: var(--bg-color4) var(--bg-color-3);
+}
+
+
+:root{
+    --bg-color1: #fffffe;
+    --bg-color2: #d1d1e9;
+    --bg-color-3: #b8c1ec;
+    --bg-color4: #6D94C5;
+
+    --highlight-1: #6246ea;
+    --highlight-2: #e45858;
+    --highlight-3: #eebbc3;
+
+    --text-color1: #2b2c34;
+
+     --selection-bg-color: #cbeef3;
+    --selection-text-color: #f49cbb;
+
+    --balao-caim-color: #f3cbd8;
+
+    
+}
+
+::selection{ /*cores de seleção*/
+    background-color: var(--selection-bg-color);
+    color: var(--selection-text-color);
+}
+
+@font-face {
+  font-family: "Quika";
+  src: url("/assets/fonts/Quika.otf") format('opentype');
+  
+}
+
+
+
+body{
+    background-image: url(/assets/img/gridpattern_bg.jpeg);
+}
+
+/*Nav-----*/
+nav{
+    height: 90px;
+    background-color: var(--bg-color2);
+    color: var(--text-color1) !important;
+}
+
+.navbar-brand{
+    font-family: "Quika", sans-serif !important;
+    font-size: 30px;
+    color: var(--highlight-1);
+    text-transform: capitalize;
+    transition: ease-in-out all 350ms;
+    transform: scale(1);
+}
+
+.navbar-brand:hover{
+    color: var(--highlight-1);
+    transition: ease-in-out all 350ms;
+    transform: scale(0.9);
+}
+
+.active{
+    color: var(--highlight-1) !important;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--highlight-2);
+}
+
+/*-----------Main1*/
+
+.main1{
+    border: dashed var(--bg-color4);
+    display: flex;
+}
+
+.main1 h2{
+    font-family: "Quika";
+    color: var(--highlight-2);
+}
+
+.main1 article{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1px;
+}
+
+.main1 img{
+    width: auto;
+    filter: drop-shadow(2px 4px 0px rgba(0, 0, 0, 0.471));
+}
+
+.container{
+    max-width: 1020px;
+}
+
+/*Misc---------*/
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); } 
+  100% { transform: translateY(0px); }  
+}
+
+.caim{
+    position: relative;
+    top: 30px;
+    width: 250px;
+    rotate: 16deg;
+    animation: float 5s alternate infinite;
+}
+
+.caim_balaoc{
+    clip-path: polygon(
+    0% 15%,       /* Canto superior esquerdo */
+    40% 15%,      /* Início da ponta (esquerda) */
+    50% 0%,       /* Vértice da ponta (topo centro) */
+    60% 15%,      /* Fim da ponta (direita) */
+    100% 15%,     /* Canto superior direito */
+    100% 100%,    /* Canto inferior direito */
+    0% 100%       /* Canto inferior esquerdo */
+  );
+
+  background-color: var(--balao-caim-color);
+  height: 310px;
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.caim_balaoc p{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+
+@font-face {
+  font-family: "Supercomic";
+  src: url("/assets/fonts/supercomic.ttf");
+}
+
+#ex1{
+    font-family: "Supercomic", sans-serif !important;
+    letter-spacing: 2px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(yellow, rgb(255, 0, 255));
+    -webkit-background: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px black;
+}
+
+#ex2{
+    font-family: "Supercomic", sans-serif !important;
+    letter-spacing: 2px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(greenyellow, blue);
+    -webkit-background: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px black;
+}
+
+
+@keyframes float-cima {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(15px); } 
+  100% { transform: translateY(0px); }  
+}
+
+.bubble{
+    position: relative;
+    top: 30px;
+    width: 130px;
+    rotate: 16deg;
+    animation: float-cima 5s alternate infinite;
+    filter: drop-shadow(4px 5px 0px rgba(0, 0, 0, 0.411));
+}
+
+.bubble_balaoc{
+    clip-path: polygon(
+    0% 0%,         /* Canto superior esquerdo */
+    100% 0%,       /* Canto superior direito */
+    100% 85%,      /* Canto inferior direito (antes da ponta) */
+    60% 85%,       /* Início da ponta (direita) */
+    50% 100%,      /* Vértice da ponta (centro inferior) */
+    40% 85%,       /* Fim da ponta (esquerda) */
+    0% 85%         /* Canto inferior esquerdo */
+  );
+  background-color: var(--selection-bg-color);
+  height: 200px;
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.bubble_balaoc p{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+
+.caine_sensor p::before{
+    content: url(/assets/markers/caine_censor.png);
+}
+
+.main1 li{
+    padding-left: 3px;
+}

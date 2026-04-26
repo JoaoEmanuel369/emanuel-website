@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="/assets/318b8ea1df5ff32.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style_home.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <script src="/script.js"></script>
+</head>
+<body>
+
+  <button class="win-button position-fixed ms-3 mt-3" style="width: 50px; height: 50px; border: none; border-radius: 50%;" id="abrir-os" title="Abrir Desktop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-microsoft" viewBox="0 0 16 16">
+  <path d="M7.462 0H0v7.19h7.462zM16 0H8.538v7.19H16zM7.462 8.211H0V16h7.462zm8.538 0H8.538V16H16z"/>
+</svg>
+  </button>
+  
+
+  <header class="header1 container">
+    <img src="/assets/img/jevil-3.png" alt="" class="img-fluid position-absolute img-respirando" style="width: 300px; bottom: 600px; z-index: 100;">
+  </header>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">João emanuel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active me-3"  aria-current="page" href="#">Home</a>
+        <a class="nav-link me-3" href="/html_about/index_about.html">Sobre</a>
+        <a class="nav-link me-3" href="/html_projetos/projetos.html">Projetos</a>
+        <a class="nav-link me-3" href="/index_links.html">Links</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="col adesivos">
+        <img src="https://codecreature.net/graphix/stickers/sandylion-clown-3.png" alt="" class="position-absolute img-fluid">
+        <img src="https://codecreature.net/graphix/stickers/sandylion-fuzzy-hat-6.png" alt="" class="position-absolute img-fluid" style="width: 150px; bottom: 1%;">
+        <img src="https://codecreature.net/graphix/stickers/sandylion-clown-1.png" alt="" class="position-absolute img-fluid" style="width: 100px; bottom: 20%; left: 50px;">
+        <img src="https://codecreature.net/graphix/stickers/sandylion-bubble-bunny-1.png" alt="" class="position-absolute img-fluid" style="width: 100px; top: 110%; left: 50px;">
+</section>
+
+<main class="container main1 mx-auto">
+<div class="col descricao">
+    <div class="row row-main1">
+        <section class="col-6 section1">
+        <h1>Bem-vindo!</h1>
+      <p>Meu nome é João Emanuel. Hoje, com meus estudos contínuos e minha experiência, vejo que meu entusiasmo vem do desenvolvimento e da <b>criação de projetos: design, desenvolvimento de jogos e softwares, Front-End, edição de vídeos</b> — o que você imaginar!</p>
+      <p>Estou sempre em busca de aprender coisas novas e mantenho a mente aberta para experiências que ampliem meu leque de habilidades. Se você tem uma oportunidade e precisa da minha ajuda, por favor...</p>
+      <h2>...entre em contato!</h2>
+
+        <p id="email" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" onclick="playSound()" style="width: fit-content;">E mail</p>
+        <audio id="myAudio" src="/assets/audio/click.mp3"></audio>
+
+        <p>Patos de Minas - MG</p>
+
+        <p><b style="text-decoration: underline;">⭐ Minhas Redes Sociais ⭐</b></p>
+
+<!-- Modal -->
+<div class="modal fade modal-contato" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-center">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">contato_email.txt</h1>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="audiocancel()"></button>
+        <audio id="myAudio2" src="/assets/audio/cancel.mp3"></audio>
+
+      </div>
+      <div class="modal-body d-flex flex-column align-items-center text-center">
+        <div style="background-color: white;">
+          <p>A maneira mais fácil de entrar em contato comigo! Eu não olho muito minnhas redes sociais, então a forma mais rapida de entrar em contato e pelo Email! ⭐</p>
+        <img src="/assets/img/email.png" alt="" class="img-fluid">
+        <p>me enviei um email em: <br><b style="color: #e45858;">joaoemanuelrpm9@gmail.com</b></p>
+        <p>ou clique no botão para abrir diretamente <br> no seu app de e-mail</p>
+        <a href="mailto:joaoemanuelrpm9@gmail.com"><button type="button" class="btn btn-secondary mb-2">me envie um email</button></a>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------------------->
+
+        <article class="row">
+            <div class="col-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg>
+            </div>
+
+            <div class="col-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+            </div>
+
+            <div class="col-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+            </div>
+
+            <div class="col-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+                <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
+                <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
+                </svg>
+            </div>
+        </article>
+    </section>
+
+    <aside class="col-4 aside1 mt-auto">
+      <img src="/assets/img/Sem título.png" alt="" class="img-fluid position-absolute img-balancando" style="bottom: 250px; width: 230px;">
+        <img src="/assets/img/jevil.png" alt="" class="img-fluid">
+       <!--<p style="font-weight: 200; font-size: 15px;text-align: right;"><em>Art by: @demodelico</em></p>--> 
+    </aside>
+    </div>
+    </div>
+
+    <aside class="col-2 aside2" style="width: 200px;">
+      
+      <header class="d-flex justify-content-center text-center allign-items-center p-0">
+        <h3>changelogs</h3>
+      </header>
+
+      <section class="d-flex" style="flex-direction: column;">
+        <article>
+          <div class="scroll_aside_1">
+            
+            <div>
+
+              <header class="header_scroll">Abril 22, 2026</header>
+              <p>Novo Layout - Sobre</p>
+
+            </div>
+          </div>
+          </article> 
+
+          <header class="d-flex justify-content-center text-center allign-items-center p-0">
+        <h3>sites que eu gosto!!</h3>
+      </header>
+
+          <article>
+            <div class="col text-center">
+              <div class="scroll_badges mt-3">
+              <a href="https://tabf5.com/" target="_blank"><img src="https://tabf5.com/img/button.gif" alt=""></a>
+              <a href="https://olliveen.neocities.org/" target="_blank"><img src="https://olliveen.neocities.org/img/button.gif"></a>
+              <a href="https://xomii.neocities.org/index.html" target="_blank"><img style="height: 31px;" src="https://olliveen.neocities.org/img/buttons/xomii.gif"></a>
+              <a href="https://astersarchive.neocities.org/" target="_blank"><img src="https://olliveen.neocities.org/img/buttons/Asters_Archive_Button.gif"></a>
+              <a href="https://ne0nbandit.neocities.org/" target="_blank"><img src="https://ne0nbandit.github.io/assets/img/btn/mine/nbbanner.png"></a>
+              <a target="_blank" href="https://deltaruneboards.net/index.php?showuser=91"><img src="https://ne0nbandit.github.io/assets/img/btn/utdr/DUMB.gif"></a>
+              <a href="https://tapestry.nu/skyward" target="_blank"> <img src="http://tapestry.nu/!codes/images/codeskyward100x503.png" border="0" alt="Skyward Sword Fan" /></a>
+              <a href="https://twelvemen.neocities.org/index.html"><img src="https://twelvemen.neocities.org/12men.gif"></a>
+              <a href="https://flavorfoley.com/"><img src="/assets/img/badges/button.gif"></a>
+              <a href="https://stringsattached.neocities.org/" target="_blank" title="Strings Attached"><img src="https://stringsattached.neocities.org/sitebutton1.gif" alt="A site button with text reading: Strings Attached. The text flashes periodically. A sprite of Spamton appears on the right of the text and changes as he notices the green strings that appear behind him."></a> 
+              <a href="https://deltarune.com/"> <img border="0" alt="dibs lab" src="https://toxoplasicity.neocities.org/graphics/sitebuttons/deltarune.gif" width="88" height="31" title="Deltarune.com"></a>
+              <a href="https://huecycles.com/" target="_blank"><img src="https://file.garden/ZjeTeW9-iWrofLOU/web%20graphics/Website-Specific%20Buttons/huecycles.gif" alt="HUECYCLES"></a>
+              <a href="https://huecycles.com/" target="_blank"><img src="/assets/img/badges/my_badge.gif" alt="HUECYCLES"></a>
+              <a href="https://stupied.net/" target="_blank"><img src="https://stupied.net/meta/button.png" alt="HUECYCLES"></a>
+              <a href="https://codecreature.net/home/" target="_blank"><img src="https://codecreature.net/graphix/buttons/nekko-scape-98.gif" alt="HUECYCLES"></a>
+            </div>
+            </div>
+            
+          </article>
+      </section>
+
+      <section class="col">
+
+        
+      </section>
+    </aside>
+</main>
+
+<footer class="container footer">
+    <p>Copyright 2026 © João-Emanuel</p>
+</footer>
+
+
+
+<div class="position-absolute container windows" id="sistema-operacional">
+  <main class="os container">
+  <div class="col mt-2 apps">
+    <div class="text-center app" id="btn-abrir-notepad">
+      <img src="https://win98icons.alexmeub.com/icons/png/notepad-1.png" alt="" class="img-fluid">
+      <p>Notepad</p>
+    </div>
+
+    <div class="text-center app mt-3" id="abrir-paint">
+      <img src="https://win98icons.alexmeub.com/icons/png/paint_old-0.png" alt="" class="img-fluid">
+      <p>Paint</p>
+    </div>
+  </div>
+
+  <div class="position-relative notepad_container" id="notepad" style="left: 10%; display: none;">
+    <div class="notepad">
+      <header class="container_os">
+        <p>Untitled - Notepad</p>
+        <button class="ms-auto" id="btn-fechar-notepad">X</button>
+      </header>
+      <ul class="list-inline">
+      <li class="list-inline-item">File</li>
+      <li class="list-inline-item">Edit</li>
+      <li class="list-inline-item">Search</li>
+      <li class="list-inline-item">Help</li>
+    </ul>
+
+    <div class="txt">
+      <textarea name="" id="text-area"></textarea>
+    </div>
+    </div>
+  </div>
+
+  <div class="position-relative notepad_container" id="paint" style="left: 30%; display: none; z-index: 100; bottom: 20%;">
+    <div class="notepad">
+      <header class="container_os">
+        <p>Untitled - Paint</p>
+        <button class="ms-auto" id="btn-fechar-paint">X</button>
+      </header>
+      <ul class="list-inline">
+      <li class="list-inline-item">File</li>
+      <li class="list-inline-item">Edit</li>
+      <li class="list-inline-item">View</li>
+      <li class="list-inline-item">Image</li>
+      <li class="list-inline-item">Colors</li>
+      <li class="list-inline-item">Help</li>
+    </ul>
+
+    <div class="txt">
+      <canvas id="quadro" width="400px" height="395px" style="cursor: crosshair;"></canvas>
+    <br>
+    <hr>
+    <input type="color" id="cor">
+    <button onclick="limpar()">Limpar Tudo</button>
+    </div>
+    </div>
+  </div>
+</main>
+
+<footer class="container footer_os">
+  
+    <button>
+      <img src="https://win98icons.alexmeub.com/icons/png/windows-4.png" alt="" class="img-fluid">
+      Start</button>
+
+      <button class="ms-auto" style="width: 30px; height: 30px;" id="fechar-os">X</button>
+</footer>
+</div>
+
+<script src="os.js"></script>
+</body>
+</html>
