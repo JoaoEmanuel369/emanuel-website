@@ -280,3 +280,11 @@ footer p{
 .balao p{
     text-align: left; font-size: 16px;
 }
+
+/*----tela cheia*/
+
+@media (min-height: 800px){
+    .nav3{
+        height: 111px;
+    }
+}

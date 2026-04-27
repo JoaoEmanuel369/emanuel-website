@@ -424,9 +424,6 @@ main a:hover{
   }
 }
 
-.img-respirando{
-    animation: respirando 5s ease-in-out infinite;
-}
 
 /*--------*/
 .balao{
@@ -578,4 +575,27 @@ body li::marker{
     color: var(--text-color1);
     background-color: var(--bg-color2);
     transition: 350ms all ease-in-out;
+}
+
+/*--------tela cheia*/
+
+#jevil_header{
+    width: 300px; 
+    bottom: 600px; 
+    z-index: 100;
+    animation: respirando 5s ease-in-out infinite;
+}
+
+#jevil_balancando{
+    bottom: 250px; width: 230px;
+}
+
+@media (min-height: 800px){
+    #jevil_header{
+        bottom: 730px;
+    }
+
+    #jevil_balancando{
+        top: -65px ;
+    }
 }
