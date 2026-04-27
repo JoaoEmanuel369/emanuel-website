@@ -599,3 +599,22 @@ body li::marker{
         top: -65px ;
     }
 }
+
+@keyframes guestbook{
+    0%{
+        color: #6246ea;
+    }
+    100%{
+        color: greenyellow;
+    }
+}
+
+.guest{
+    animation: guestbook 3s infinite alternate !important;
+    font-weight: 800;
+    border: dashed var(--bg-color4) 2px;
+}
+
+.guest::before{
+    content: url(/assets/markers/caine_marker.png);
+}
