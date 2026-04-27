@@ -618,3 +618,42 @@ body li::marker{
 .guest::before{
     content: url(/assets/markers/caine_marker.png);
 }
+
+.guestbook{
+    width: 225px;
+    height: fit-content;
+    background-color: var(--bg-color1);
+    font-size: 16px !important;
+    background-color: var(--bg-color-3);
+    border: dashed 3px var(--bg-color4);
+    left: 85%;
+    text-align: justify;
+    padding: 6px;
+}
+
+.guestbook{
+    color: var(--highlight-2);
+    text-decoration: none;
+}
+
+.guestbook h6{
+    font-size: 13px;
+    text-align: center;
+}
+
+
+@font-face {
+  font-family: "Supercomic";
+  src: url("/assets/fonts/supercomic.ttf");
+}
+
+#ex1{
+    font-family: "Supercomic", sans-serif !important;
+    letter-spacing: 2px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(yellow, rgb(255, 0, 255));
+    -webkit-background: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px black;
+}
