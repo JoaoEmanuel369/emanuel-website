@@ -4,6 +4,7 @@
     margin: 0;
     font-family: "Open Sans";
     scrollbar-color: var(--bg-color4) var(--bg-color-3);
+     cursor: url('/assets/cr1.png'), auto;
     
 }
 
@@ -622,18 +623,23 @@ body li::marker{
 .guestbook{
     width: 225px;
     height: fit-content;
-    background-color: var(--bg-color1);
     font-size: 16px !important;
-    background-color: var(--bg-color-3);
-    border: dashed 3px var(--bg-color4);
     left: 85%;
     text-align: justify;
     padding: 6px;
 }
 
+.guestbook a{
+    text-decoration: none;
+}
+
+p img{
+    width: 15x !important;
+    display: inline-block;
+}
+
 .guestbook{
     color: var(--highlight-2);
-    text-decoration: none;
 }
 
 .guestbook h6{
@@ -641,6 +647,15 @@ body li::marker{
     text-align: center;
 }
 
+.glossy{
+    background: linear-gradient(rgba(173, 216, 230, 0.4), rgb(0, 98, 128,0.4)) ;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border-radius: 30px;
+    padding: 6px;
+    margin-bottom: 24px;
+    color: var(--highlight-2);
+}
 
 @font-face {
   font-family: "Supercomic";

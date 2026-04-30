@@ -4,8 +4,13 @@
     margin: 0;
     font-family: "Open Sans";
     scrollbar-color: var(--bg-color4) var(--bg-color-3);
+    cursor: url('/assets/cr1.png'), auto;
 }
 
+p img{
+    width: 35px;
+    display: inline-block;
+}
 
 :root{
     --bg-color1: #fffffe;

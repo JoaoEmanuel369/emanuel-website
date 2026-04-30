@@ -4,6 +4,7 @@
     margin: 0;
     font-family: "Open Sans";
     scrollbar-color: var(--bg-color4) var(--bg-color-3);
+    cursor: url('/assets/cr1.png'), auto;
 }
 
 
@@ -44,6 +45,11 @@ main a{
     color: var(--highlight-2);
     font-weight: 650;
     transition: 350ms ease-in-out all;
+}
+
+p img{
+    width: 35px !important;
+    display: inline-block;
 }
 
 main a:hover{
